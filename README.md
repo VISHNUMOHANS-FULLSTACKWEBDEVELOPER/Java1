@@ -72,3 +72,21 @@ public class Overloading {
         
     }
 }
+Overriding
+import java.util.*;
+ class Father{
+        void work(){
+            System.out.println("abc");
+        }
+    }
+    
+public class Son extends Father{
+        void work(){
+            System.out.println("def");
+          } 
+    public static void main(String[] args) {
+       Son s=new Son();
+       s.work();
+        
+    }
+}
