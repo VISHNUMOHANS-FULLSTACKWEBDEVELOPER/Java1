@@ -18,3 +18,42 @@ class  FirstProgram{
         p2.sound("Sony");
     }
 }
+Constructors
+import java.util.*;
+class FirstProgram{
+     int mil;
+     {
+         mil=90;
+     }
+     FirstProgram(int m){
+         mil=m;
+     }
+    FirstProgram(FirstProgram ob1){
+         this.mil=ob1.mil;
+     }
+    
+    public static void main(String[] args) {
+        FirstProgram obj=new FirstProgram();
+        System.out.println(obj.mil);
+        
+        FirstProgram ob1=new FirstProgram(20);
+        System.out.println(ob1.mil);
+        FirstProgram ob2=new FirstProgram(obj);
+        System.out.println(ob2.mil);
+    }
+}
+Inheritance
+import java.util.*;
+class father{
+   void work(){System.out.println("Working");}
+}
+class son extends father{
+    void play(){System.out.println("Playing");}
+}
+ public class FirstProgram{
+    public static void main(String[] args) {
+        son s=new son();
+        s.play();
+        s.work();
+    }
+}
